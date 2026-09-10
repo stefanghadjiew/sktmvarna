@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAPHA · Варна — Излез на масата</title>
+    <meta name="theme-color" content="#faf9f7" />
+    <meta
+      name="description"
+      content="BAPHA Варна: 14 маси, седмични турнири и тренировки — всичко на едно място. Резервирай маса, запиши се за турнир или заяви треньор."
+    />
+    <script>
+      // Resolve theme and language before first paint so the page never
+      // flashes the wrong palette or the wrong `lang`. Storage keys must match
+      // THEME_STORAGE_KEY in src/lib/theme.ts and LANGUAGE_STORAGE_KEY in
+      // src/i18n/config.ts.
+      ;(function () {
+        var root = document.documentElement
+        var theme = 'light'
+        var language = 'bg'
+        try {
+          var storedTheme = localStorage.getItem('bapha-theme')
+          theme =
+            storedTheme === 'light' || storedTheme === 'dark'
+              ? storedTheme
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+          var storedLanguage = localStorage.getItem('bapha-language')
+          if (storedLanguage === 'bg' || storedLanguage === 'en') {
+            language = storedLanguage
+          }
+        } catch (error) {
+          /* storage blocked — fall back to the defaults above */
+        }
+        root.classList.add(theme)
+        root.lang = language
+        if (theme === 'dark') {
+          var meta = document.querySelector('meta[name="theme-color"]')
+          if (meta) meta.setAttribute('content', '#0a0a0a')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

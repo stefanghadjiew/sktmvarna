@@ -1,0 +1,319 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  BAPHA · Varna — two themes, one token set.
+  `:root` carries the light theme; `.dark` overrides only what actually
+  differs between the two designs. The class is applied before first paint
+  by the bootstrap script in index.html, so there is no flash on load.
+*/
+:root {
+  color-scheme: light;
+  --radius: 0.75rem;
+
+  /* Widest the content column ever gets, on any screen. */
+  --page-max: 1440px;
+
+  --screen-glow-1: none;
+  --screen-glow-2: none;
+
+  /* Surfaces & text */
+  --background: #faf9f7;
+  --foreground: #111111;
+  --card: #ffffff;
+  --card-foreground: #111111;
+  --card-meta: #888888;
+  --card-hint: #999999;
+  --popover: #ffffff;
+  --popover-foreground: #111111;
+  --primary: #e5342e;
+  --primary-foreground: #ffffff;
+  --secondary: #eeeeee;
+  --secondary-foreground: #111111;
+  --muted: #f0f0f0;
+  --muted-foreground: #777777;
+  --accent: #f0f0f0;
+  --accent-foreground: #111111;
+  --destructive: #e5342e;
+  --border: #eeeeee;
+  --input: #dddddd;
+  --ring: #e5342e;
+
+  /* Brand */
+  --brand: #e5342e;
+  --brand-accent: #c22e28;
+  --brand-icon: #c22e28;
+  --brand-tint: rgba(229, 52, 46, 0.1);
+
+  /* Detail */
+  --hairline: #eeeeee;
+  --hairline-strong: #eeeeee;
+  --label: #999999;
+  --chevron: #cccccc;
+  --track: #f0f0f0;
+  --row-hover: rgba(17, 17, 17, 0.03);
+  --row-active: rgba(17, 17, 17, 0.06);
+  --success: #1f8347;
+  --success-tint: rgba(46, 158, 91, 0.12);
+
+  /* Coaching surfaces. The trainers page ships dark-only in the mockups;
+     these light values are derived from the light home design. */
+  --brand-badge-tint: rgba(229, 52, 46, 0.12);
+  --inset: #f4f2ef;
+  --chip: #f0efed;
+  --chip-foreground: #555555;
+  --meta: #999999;
+  --body: #444444;
+  --avatar-gradient: linear-gradient(145deg, #e5342e, #a32d2d);
+
+  /* Rankings */
+  --info: #333333;
+  --field-border: #e5e5e5;
+  --rank: #aaaaaa;
+  --rank-meta: #999999;
+  --delta-flat: #bbbbbb;
+  --dot-win: #37a866;
+  --dot-loss: #d9534f;
+  --dot-none: #dddddd;
+
+  /* Player profile */
+  --surface: #ffffff;
+  --surface-border: #eeeeee;
+  --kv-line: #f0f0f0;
+  --kv-value: #333333;
+  --kv-muted: #cccccc;
+  --empty: #aaaaaa;
+}
+
+:root.dark {
+  color-scheme: dark;
+
+  --screen-glow-1: radial-gradient(
+    ellipse 520px 380px at 30% -10%,
+    rgba(229, 52, 46, 0.2),
+    transparent 62%
+  );
+  --screen-glow-2: radial-gradient(
+    ellipse 400px 300px at 100% 15%,
+    rgba(229, 52, 46, 0.1),
+    transparent 55%
+  );
+
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card: rgba(255, 255, 255, 0.05);
+  --card-foreground: #ffffff;
+  --card-meta: #999999;
+  --card-hint: #999999;
+  --popover: #141414;
+  --popover-foreground: #ffffff;
+  --secondary: rgba(255, 255, 255, 0.08);
+  --secondary-foreground: #ffffff;
+  --muted: rgba(255, 255, 255, 0.06);
+  --muted-foreground: #999999;
+  --accent: rgba(255, 255, 255, 0.08);
+  --accent-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.12);
+  --input: rgba(255, 255, 255, 0.14);
+
+  --brand-accent: #ef6b62;
+  --brand-icon: #e5342e;
+  --brand-tint: rgba(229, 52, 46, 0.14);
+
+  --hairline: rgba(255, 255, 255, 0.08);
+  --hairline-strong: rgba(255, 255, 255, 0.1);
+  --label: #666666;
+  --chevron: #555555;
+  --track: rgba(255, 255, 255, 0.08);
+  --row-hover: rgba(255, 255, 255, 0.03);
+  --row-active: rgba(255, 255, 255, 0.05);
+  --success: #6fdb9a;
+  --success-tint: rgba(46, 158, 91, 0.18);
+
+  --brand-badge-tint: rgba(229, 52, 46, 0.16);
+  --inset: rgba(255, 255, 255, 0.04);
+  --chip: rgba(255, 255, 255, 0.06);
+  --chip-foreground: #cccccc;
+  --meta: #888888;
+  --body: #bbbbbb;
+
+  --info: #cccccc;
+  --field-border: rgba(255, 255, 255, 0.1);
+  --rank: #666666;
+  --rank-meta: #777777;
+  --delta-flat: #666666;
+  --dot-win: #4bbf7a;
+  --dot-loss: #d9534f;
+  --dot-none: #3a3a3a;
+
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --kv-line: rgba(255, 255, 255, 0.07);
+  --kv-value: #dddddd;
+  --kv-muted: #555555;
+  --empty: #666666;
+}
+
+@theme inline {
+  --container-content: var(--page-max);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-meta: var(--card-meta);
+  --color-card-hint: var(--card-hint);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-brand: var(--brand);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-icon: var(--brand-icon);
+  --color-brand-tint: var(--brand-tint);
+  --color-hairline: var(--hairline);
+  --color-label: var(--label);
+  --color-chevron: var(--chevron);
+  --color-track: var(--track);
+  --color-row-hover: var(--row-hover);
+  --color-row-active: var(--row-active);
+  --color-success: var(--success);
+  --color-success-tint: var(--success-tint);
+  --color-brand-badge-tint: var(--brand-badge-tint);
+  --color-inset: var(--inset);
+  --color-chip: var(--chip);
+  --color-chip-foreground: var(--chip-foreground);
+  --color-meta: var(--meta);
+  --color-body: var(--body);
+  --color-info: var(--info);
+  --color-field-border: var(--field-border);
+  --color-rank: var(--rank);
+  --color-rank-meta: var(--rank-meta);
+  --color-delta-flat: var(--delta-flat);
+  --color-dot-win: var(--dot-win);
+  --color-dot-loss: var(--dot-loss);
+  --color-dot-none: var(--dot-none);
+  --color-surface: var(--surface);
+  --color-surface-border: var(--surface-border);
+  --color-kv-line: var(--kv-line);
+  --color-kv-value: var(--kv-value);
+  --color-kv-muted: var(--kv-muted);
+  --color-empty: var(--empty);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@utility hairline-b {
+  border-bottom: 0.5px solid var(--hairline);
+}
+
+@utility hairline-t {
+  border-top: 0.5px solid var(--hairline-strong);
+}
+
+@utility screen-surface {
+  background: var(--screen-glow-1), var(--screen-glow-2), var(--background);
+  background-repeat: no-repeat;
+}
+
+/*
+  Only applied for the ~200ms around a theme switch, so the palette crossfades
+  without every unrelated hover inheriting a transition.
+*/
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition:
+    background-color 180ms ease,
+    background-image 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    fill 180ms ease,
+    stroke 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-transition,
+  .theme-transition *,
+  .theme-transition *::before,
+  .theme-transition *::after {
+    transition: none !important;
+  }
+}
+
+@utility avatar-gradient {
+  background: var(--avatar-gradient);
+}
+
+/*
+  On phones the content area is its own scroll container, so the pinned header
+  and bottom nav stay put; keep that scrollbar quiet. From `md` up the shell
+  hands scrolling back to the document, which is what a sticky site header and
+  the browser's own scroll restoration expect.
+*/
+@utility screen-scroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+
+  @media (width >= 48rem) {
+    overflow-y: visible;
+    overscroll-behavior: auto;
+  }
+}
+
+@utility kv-line-t {
+  border-top: 0.5px solid var(--kv-line);
+}
+
+/* The mockup glows are scaled to a phone screen; widen them with the viewport. */
+@media (width >= 48rem) {
+  :root.dark {
+    --screen-glow-1: radial-gradient(
+      ellipse 1100px 620px at 22% -12%,
+      rgba(229, 52, 46, 0.16),
+      transparent 62%
+    );
+    --screen-glow-2: radial-gradient(
+      ellipse 820px 520px at 96% 6%,
+      rgba(229, 52, 46, 0.08),
+      transparent 58%
+    );
+  }
+}

@@ -1,0 +1,72 @@
+import type { TranslationKey } from '@/i18n/types'
+
+export type TrainerStat = {
+  value: string
+  labelKey: TranslationKey
+}
+
+export type Trainer = {
+  id: string
+  nameKey: TranslationKey
+  initials: string
+  /** Years of coaching, pluralised per language at render time. */
+  years: number
+  specialtyKey: TranslationKey
+  href: string
+}
+
+export type FeaturedTrainer = Omit<Trainer, 'years' | 'specialtyKey'> & {
+  roleKey: TranslationKey
+  badgeKey: TranslationKey
+  bioKey: TranslationKey
+  stats: TrainerStat[]
+  tagKeys: TranslationKey[]
+}
+
+export const featuredTrainer: FeaturedTrainer = {
+  id: 'nikolay-kapitanov',
+  nameKey: 'trainers.people.nikolayKapitanov.name',
+  initials: 'NK',
+  roleKey: 'trainers.roles.headCoach',
+  badgeKey: 'trainers.badges.head',
+  bioKey: 'trainers.people.nikolayKapitanov.bio',
+  href: '/trainers/nikolay-kapitanov',
+  stats: [
+    { value: '11', labelKey: 'trainers.stats.yearsCoaching' },
+    { value: '45+', labelKey: 'trainers.stats.playersTrained' },
+    { value: '12', labelKey: 'trainers.stats.tablesInHall' },
+  ],
+  tagKeys: [
+    'trainers.tags.juniors',
+    'trainers.tags.competitivePrep',
+    'trainers.tags.formerPro',
+    'trainers.tags.germanLeague',
+  ],
+}
+
+export const otherTrainers: Trainer[] = [
+  {
+    id: 'desislava-petrova',
+    nameKey: 'trainers.people.desislavaPetrova.name',
+    initials: 'DP',
+    years: 6,
+    specialtyKey: 'trainers.roles.juniorSpecialist',
+    href: '/trainers/desislava-petrova',
+  },
+  {
+    id: 'georgi-ivanov',
+    nameKey: 'trainers.people.georgiIvanov.name',
+    initials: 'GI',
+    years: 4,
+    specialtyKey: 'trainers.roles.competitivePlay',
+    href: '/trainers/georgi-ivanov',
+  },
+  {
+    id: 'mihail-todorov',
+    nameKey: 'trainers.people.mihailTodorov.name',
+    initials: 'MT',
+    years: 3,
+    specialtyKey: 'trainers.roles.beginners',
+    href: '/trainers/mihail-todorov',
+  },
+]
