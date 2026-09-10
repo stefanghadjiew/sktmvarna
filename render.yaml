@@ -1,0 +1,29 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+#
+# Create the service from this file with New > Blueprint in the Render
+# dashboard, rather than clicking a Static Site together by hand: the rewrite
+# below is the part that is easy to forget and impossible to notice locally.
+services:
+  - type: web
+    name: sktmvarna
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    # Build only when something that affects the built site changed.
+    buildFilter:
+      ignoredPaths:
+        - README.md
+    routes:
+      # The app is a single HTML file with client-side routing, so every path
+      # has to be served that file. Without this, /gallery is a 404 on a hard
+      # refresh or a shared link — it only works when you navigate in-app.
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      # Vite fingerprints everything under /assets/, so those URLs can never
+      # go stale. index.html keeps Render's short default cache so a deploy
+      # is picked up straight away.
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
