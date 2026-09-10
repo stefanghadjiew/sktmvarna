@@ -4,6 +4,11 @@ export const en = {
     description:
       'BAPHA Varna: 14 tables, weekly tournaments, and coaching — all in one place. Reserve a table, join a tournament, or request a trainer.',
   },
+  splash: {
+    title: 'Welcome to the table',
+    tagline: 'Varna’s home for table tennis — come and play with us.',
+    loading: 'Loading',
+  },
   common: {
     back: 'Go back',
     account: 'Your account',
