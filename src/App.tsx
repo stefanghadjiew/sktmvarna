@@ -4,10 +4,14 @@ import { SplashScreen } from '@/components/splash-screen'
 import { useAppBoot } from '@/hooks/use-app-boot'
 import { Gallery } from '@/pages/gallery'
 import { Home } from '@/pages/home'
+import { Landing } from '@/pages/landing'
 import { NotFound } from '@/pages/not-found'
-import { PlayerProfilePage } from '@/pages/player-profile'
-import { Rankings } from '@/pages/rankings'
 import { Trainers } from '@/pages/trainers'
+// Profile and rankings are switched off for now. The pages themselves are kept
+// intact — turning them back on is uncommenting these two imports and the two
+// routes below, plus their entries in `src/data/nav.ts`.
+// import { PlayerProfilePage } from '@/pages/player-profile'
+// import { Rankings } from '@/pages/rankings'
 
 function App() {
   const phase = useAppBoot()
@@ -15,10 +19,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/account" element={<PlayerProfilePage />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/account" element={<PlayerProfilePage />} /> */}
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/rankings" element={<Rankings />} />
+        {/* <Route path="/rankings" element={<Rankings />} /> */}
         <Route path="/trainers" element={<Trainers />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -13,27 +13,25 @@ export function Trainers() {
 
   return (
     <AppShell header={<PageHeader backTo="/" />} nav={<BottomNav />}>
-      <div className="mx-auto max-w-[1180px]">
-        <PageIntro
-          eyebrow={t('trainers.eyebrow')}
-          title={
-            <Trans
-              i18nKey="trainers.title"
-              components={{ accent: <span className="text-brand" /> }}
-            />
-          }
-          subtitle={t('trainers.subtitle')}
-        />
-
-        {/* The head coach's bio is long-form, so it takes the wide column and
-            the roster sits alongside it rather than below the fold. */}
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-12">
-          <FeaturedTrainerCard trainer={featuredTrainer} />
-          <TrainerList
-            trainers={otherTrainers}
-            className="pb-1 lg:sticky lg:top-28"
+      <PageIntro
+        eyebrow={t('trainers.eyebrow')}
+        title={
+          <Trans
+            i18nKey="trainers.title"
+            components={{ accent: <span className="text-brand" /> }}
           />
-        </div>
+        }
+        subtitle={t('trainers.subtitle')}
+      />
+
+      {/* The head coach's bio is long-form, so it takes the wide column and
+          the roster sits alongside it rather than below the fold. */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-12">
+        <FeaturedTrainerCard trainer={featuredTrainer} />
+        <TrainerList
+          trainers={otherTrainers}
+          className="pb-1 lg:sticky lg:top-28"
+        />
       </div>
     </AppShell>
   )

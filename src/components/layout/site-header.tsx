@@ -4,28 +4,19 @@ import { Link, NavLink } from 'react-router'
 import { LanguageToggle } from '@/components/language-toggle'
 import { Logo } from '@/components/logo'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { headerNavItems } from '@/data/nav'
 import { cn } from '@/lib/utils'
-
-type SiteHeaderProps = {
-  userName?: string
-  avatarUrl?: string
-}
 
 /**
  * The wide-screen counterpart to `BottomNav`: from `md` up the tab bar moves
  * to a sticky header with real labels. Hidden below `md`, where the phone
  * layout's own header and bottom nav take over.
+ *
+ * The account avatar that used to sit on the right is commented out along with
+ * the profile route — see `src/App.tsx`.
  */
-export function SiteHeader({ userName, avatarUrl }: SiteHeaderProps) {
+export function SiteHeader() {
   const { t } = useTranslation()
-  const initials = userName
-    ?.split(' ')
-    .map((part) => part[0])
-    .slice(0, 2)
-    .join('')
-    .toUpperCase()
 
   return (
     <header className="sticky top-0 z-30 hidden bg-background/85 backdrop-blur-md md:block">
@@ -37,7 +28,7 @@ export function SiteHeader({ userName, avatarUrl }: SiteHeaderProps) {
         >
           <Logo className="size-10" />
           <span className="text-[13px] font-semibold tracking-[0.2px] text-foreground">
-            {t('home.eyebrow')}
+            {t('landing.eyebrow')}
           </span>
         </Link>
 
@@ -68,14 +59,6 @@ export function SiteHeader({ userName, avatarUrl }: SiteHeaderProps) {
         <div className="ml-auto flex shrink-0 items-center gap-1.5">
           <LanguageToggle />
           <ThemeToggle />
-          <Link to="/account" aria-label={t('common.account')}>
-            <Avatar className="size-8 border-[0.5px] border-input bg-secondary">
-              {avatarUrl ? <AvatarImage src={avatarUrl} alt="" /> : null}
-              <AvatarFallback className="bg-transparent text-[11px] font-semibold text-muted-foreground">
-                {initials}
-              </AvatarFallback>
-            </Avatar>
-          </Link>
         </div>
       </div>
     </header>

@@ -5,7 +5,7 @@ export const en = {
       'BAPHA Varna: 14 tables, weekly tournaments, and coaching — all in one place. Reserve a table, join a tournament, or request a trainer.',
   },
   splash: {
-    title: 'Welcome to the table',
+    title: 'Welcome to SKTM Varna',
     tagline: 'Varna’s home for table tennis — come and play with us.',
     loading: 'Loading',
   },
@@ -32,6 +32,38 @@ export const en = {
     bg: 'Bulgarian',
     en: 'English',
     switchTo: 'Switch to {{language}}',
+  },
+  landing: {
+    eyebrow: 'SKTM · Varna',
+    title: 'Table tennis complex <accent>“Varna”</accent>',
+    subtitle:
+      'The venue offers some of the best conditions in the country — group and individual sessions for children and adults, for hobby players and amateurs alike!',
+    about:
+      'The TABLE TENNIS “VARNA” sports complex sits on Zapadna Promishlena Street, opposite the former brewery in ZPZ, Varna.',
+    club: {
+      who: 'We are “Table Tennis Sports Club Varna”.',
+      academy: 'We run a youth academy for children and juniors.',
+      welcome: 'We look forward to seeing you! 🏓',
+    },
+    social: {
+      heading: 'Follow us',
+      hall: 'The hall on Facebook',
+      hallDescription: 'Table Tennis Sports Complex “Varna”',
+      club: 'The club on Facebook',
+      clubDescription: 'Table Tennis Sports Club Varna',
+    },
+    location: {
+      heading: 'Find us',
+      addressLabel: 'Address',
+      address: 'Zapadna Industrialna St, ZPZ, 9020 Varna',
+      landmark: 'Opposite the former brewery.',
+      mapTitle: 'Map showing the location of the hall',
+      openInMaps: 'Open in Google Maps',
+    },
+    cta: {
+      trainers: 'See the trainers',
+      gallery: 'Browse the gallery',
+    },
   },
   home: {
     eyebrow: 'BAPHA · Varna',
