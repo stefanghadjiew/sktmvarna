@@ -35,11 +35,11 @@ export const en = {
   },
   landing: {
     eyebrow: 'SKTM · Varna',
-    title: 'Table tennis complex <accent>“Varna”</accent>',
+    title: 'Table tennis complex <accent>Varna</accent>',
     subtitle:
       'The venue offers some of the best conditions in the country — group and individual sessions for children and adults, for hobby players and amateurs alike!',
     about:
-      'The TABLE TENNIS “VARNA” sports complex sits on Zapadna Promishlena Street, opposite the former brewery in ZPZ, Varna.',
+      'The TABLE TENNIS VARNA sports complex sits on Zapadna Promishlena Street, opposite the former brewery in ZPZ, Varna.',
     club: {
       who: 'We are “Table Tennis Sports Club Varna”.',
       academy: 'We run a youth academy for children and juniors.',
@@ -48,7 +48,7 @@ export const en = {
     social: {
       heading: 'Follow us',
       hall: 'The hall on Facebook',
-      hallDescription: 'Table Tennis Sports Complex “Varna”',
+      hallDescription: 'Table Tennis Sports Complex Varna',
       club: 'The club on Facebook',
       clubDescription: 'Table Tennis Sports Club Varna',
     },
@@ -60,9 +60,15 @@ export const en = {
       mapTitle: 'Map showing the location of the hall',
       openInMaps: 'Open in Google Maps',
     },
+    contact: {
+      heading: 'Contact',
+      phoneLabel: 'Phone',
+      call: 'Call us',
+    },
     cta: {
       trainers: 'See the trainers',
       gallery: 'Browse the gallery',
+      tournir: 'Tournaments on tournir.com',
     },
   },
   home: {
@@ -200,6 +206,7 @@ export const en = {
     title: 'Train with our <accent>trainers</accent>',
     subtitle: 'Book a session with a certified coach and level up your game.',
     alsoCoaching: 'Also coaching',
+    noOtherTrainers: 'More trainers coming soon.',
     requestSession: 'Request a session',
     readMore: 'Read more',
     readLess: 'Read less',
@@ -239,9 +246,6 @@ export const en = {
           'We warmly invite you to visit us, to feel the positive energy, to enjoy the game and to experience good emotions. Developing both the sport and the coming generations matters a great deal to us. We look forward to seeing you.',
         ].join('\n\n'),
       },
-      desislavaPetrova: { name: 'Desislava Petrova' },
-      georgiIvanov: { name: 'Georgi Ivanov' },
-      mihailTodorov: { name: 'Mihail Todorov' },
     },
   },
   notFound: {

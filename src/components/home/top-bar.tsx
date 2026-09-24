@@ -19,7 +19,7 @@ export function TopBar() {
         aria-label={t('common.homeLink')}
         className="rounded-lg focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
       >
-        <Logo className="size-[34px]" />
+        <Logo className="size-[42px]" />
       </Link>
 
       <div className="flex items-center gap-1.5">

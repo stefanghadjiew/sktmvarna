@@ -44,29 +44,5 @@ export const featuredTrainer: FeaturedTrainer = {
   ],
 }
 
-export const otherTrainers: Trainer[] = [
-  {
-    id: 'desislava-petrova',
-    nameKey: 'trainers.people.desislavaPetrova.name',
-    initials: 'DP',
-    years: 6,
-    specialtyKey: 'trainers.roles.juniorSpecialist',
-    href: '/trainers/desislava-petrova',
-  },
-  {
-    id: 'georgi-ivanov',
-    nameKey: 'trainers.people.georgiIvanov.name',
-    initials: 'GI',
-    years: 4,
-    specialtyKey: 'trainers.roles.competitivePlay',
-    href: '/trainers/georgi-ivanov',
-  },
-  {
-    id: 'mihail-todorov',
-    nameKey: 'trainers.people.mihailTodorov.name',
-    initials: 'MT',
-    years: 3,
-    specialtyKey: 'trainers.roles.beginners',
-    href: '/trainers/mihail-todorov',
-  },
-]
+/** Add coaches here as they join; the list shows a placeholder while empty. */
+export const otherTrainers: Trainer[] = []

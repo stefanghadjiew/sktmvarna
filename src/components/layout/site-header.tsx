@@ -26,7 +26,7 @@ export function SiteHeader() {
           aria-label={t('common.homeLink')}
           className="flex shrink-0 items-center gap-2.5 rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
         >
-          <Logo className="size-10" />
+          <Logo className="size-14" />
           <span className="text-[13px] font-semibold tracking-[0.2px] text-foreground">
             {t('landing.eyebrow')}
           </span>

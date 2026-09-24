@@ -26,6 +26,12 @@ export function TrainerList({
         {t('trainers.alsoCoaching')}
       </h2>
 
+      {trainers.length === 0 && (
+        <p className="px-1 py-[11px] text-[13px] text-meta">
+          {t('trainers.noOtherTrainers')}
+        </p>
+      )}
+
       <ul>
         {trainers.map(
           ({ id, nameKey, initials, years, specialtyKey, href }, index) => (

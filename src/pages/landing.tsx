@@ -1,18 +1,20 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { Trans, useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
 
 import { BottomNav } from '@/components/home/bottom-nav'
 import { TopBar } from '@/components/home/top-bar'
+import { ContactPhone } from '@/components/landing/contact-phone'
 import { SocialLinks } from '@/components/landing/social-links'
 import { VenueMap } from '@/components/landing/venue-map'
 import { AppShell } from '@/components/layout/app-shell'
 import { PageIntro } from '@/components/page-intro'
 import { Button } from '@/components/ui/button'
+import { tournirUrl } from '@/data/contact'
 
 /**
  * The site's front door: who the club is, where the hall is, where to follow
- * it, and the two screens worth sending a first-time visitor to.
+ * it, how to call, and the screens worth sending a first-time visitor to.
  */
 export function Landing() {
   const { t } = useTranslation()
@@ -48,6 +50,8 @@ export function Landing() {
         </p>
       </div>
 
+      <ContactPhone />
+
       <VenueMap />
 
       <SocialLinks />
@@ -58,6 +62,16 @@ export function Landing() {
             {t('landing.cta.trainers')}
             <ArrowRight className="size-4" strokeWidth={1.8} />
           </Link>
+        </Button>
+        <Button
+          asChild
+          size="lg"
+          className="bg-brand text-white hover:bg-brand-accent sm:w-auto"
+        >
+          <a href={tournirUrl} target="_blank" rel="noreferrer noopener">
+            {t('landing.cta.tournir')}
+            <ExternalLink className="size-4" strokeWidth={1.8} />
+          </a>
         </Button>
         <Button asChild size="lg" variant="outline" className="sm:w-auto">
           <Link to="/gallery">{t('landing.cta.gallery')}</Link>
