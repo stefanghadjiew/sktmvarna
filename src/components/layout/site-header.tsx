@@ -20,7 +20,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-30 hidden bg-background/85 backdrop-blur-md md:block">
-      <div className="hairline-b mx-auto flex h-16 w-full max-w-content items-center gap-6 px-8 lg:gap-8 lg:px-12">
+      <div className="hairline-b mx-auto flex h-16 w-full max-w-content items-center gap-6 lg:gap-8 lg:px-12">
         <Link
           to="/"
           aria-label={t('common.homeLink')}
