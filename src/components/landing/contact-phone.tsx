@@ -11,7 +11,7 @@ export function ContactPhone() {
   return (
     <section className="mb-8 md:mb-14">
       <h2 className="mb-3 text-[11px] font-semibold tracking-[1px] text-label uppercase md:mb-5 md:text-xs">
-        {t('landing.contact.heading')}
+        {t('hall.contact.heading')}
       </h2>
 
       <div className="flex flex-col gap-4 rounded-2xl border-[0.5px] border-border bg-card p-4 sm:flex-row sm:items-center md:p-5">
@@ -22,7 +22,7 @@ export function ContactPhone() {
 
           <span className="min-w-0">
             <span className="block text-[11px] font-semibold tracking-[1px] text-label uppercase">
-              {t('landing.contact.phoneLabel')}
+              {t('hall.contact.phoneLabel')}
             </span>
             <a
               href={`tel:${contactPhone.tel}`}
@@ -36,7 +36,7 @@ export function ContactPhone() {
         <Button asChild variant="outline" className="sm:w-auto">
           <a href={`tel:${contactPhone.tel}`}>
             <Phone className="size-4" strokeWidth={1.8} />
-            {t('landing.contact.call')}
+            {t('hall.contact.call')}
           </a>
         </Button>
       </div>

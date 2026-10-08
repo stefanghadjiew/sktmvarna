@@ -24,6 +24,14 @@ export function useFormatters() {
     return {
       locale,
       date: new Intl.DateTimeFormat(locale, dateOptions),
+      longDate: new Intl.DateTimeFormat(locale, {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+      }),
+      weekday: new Intl.DateTimeFormat(locale, { weekday: 'short' }),
+      dayOfMonth: new Intl.DateTimeFormat(locale, { day: 'numeric' }),
       time: new Intl.DateTimeFormat(locale, {
         hour: '2-digit',
         minute: '2-digit',
@@ -32,6 +40,11 @@ export function useFormatters() {
       percent: new Intl.NumberFormat(locale, {
         style: 'percent',
         maximumFractionDigits: 0,
+      }),
+      euro: new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency: 'EUR',
+        maximumFractionDigits: 2,
       }),
     }
   }, [language])

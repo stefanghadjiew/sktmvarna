@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "node scripts/sync-tournaments.mjs --soft && tsc -b && vite build",
     "lint": "eslint .",
     "gallery:sizes": "node scripts/gallery-sizes.mjs",
+    "tournaments:sync": "node scripts/sync-tournaments.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

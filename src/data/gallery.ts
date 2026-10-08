@@ -103,3 +103,25 @@ export const gallerySections: GallerySection[] = [
     photos: photosIn('kids'),
   },
 ]
+
+/**
+ * A hand-picked slice of the gallery for use inside a page, mixing sections
+ * so a strip shows players, tables and tournament evenings side by side.
+ * `picks` are `[sectionId, index]` pairs; out-of-range picks are skipped, so
+ * removing photos from a folder never breaks a page.
+ */
+export function photoSelection(
+  id: string,
+  picks: [section: string, index: number][],
+): GallerySection {
+  const photos = picks.flatMap(([sectionId, index]) => {
+    const photo = gallerySections.find((section) => section.id === sectionId)?.photos[index]
+    return photo ? [photo] : []
+  })
+  return {
+    id,
+    titleKey: 'gallery.title',
+    altKey: 'gallery.alt.venue',
+    photos,
+  }
+}

@@ -1,26 +1,8 @@
 export const en = {
-  app: {
-    title: 'BAPHA · Varna — Get on the table',
-    description:
-      'BAPHA Varna: 14 tables, weekly tournaments, and coaching — all in one place. Reserve a table, join a tournament, or request a trainer.',
-  },
   splash: {
-    title: 'Welcome to SKTM Varna',
+    title: 'Welcome to Varna Sports Complex',
     tagline: 'Varna’s home for table tennis — come and play with us.',
     loading: 'Loading',
-  },
-  common: {
-    back: 'Go back',
-    account: 'Your account',
-    homeLink: 'BAPHA home',
-  },
-  nav: {
-    primary: 'Primary',
-    home: 'Home',
-    gallery: 'Gallery',
-    rankings: 'Rankings',
-    coaching: 'Coaching',
-    account: 'Account',
   },
   theme: {
     light: 'light',
@@ -33,25 +15,348 @@ export const en = {
     en: 'English',
     switchTo: 'Switch to {{language}}',
   },
-  landing: {
-    eyebrow: 'SKTM · Varna',
-    title: 'Table tennis complex <accent>Varna</accent>',
-    subtitle:
-      'The venue offers some of the best conditions in the country — group and individual sessions for children and adults, for hobby players and amateurs alike!',
-    about:
-      'The TABLE TENNIS VARNA sports complex sits on Zapadna Promishlena Street, opposite the former brewery in ZPZ, Varna.',
+  common: {
+    back: 'Go back',
+    account: 'Your account',
+    homeLink: 'Varna Sports Complex — home',
+    viewAll: 'View all',
+    onRequest: 'On request',
+    demo: {
+      title: 'Demo mode',
+      booking:
+        'Online booking is not connected to the hall yet — this reservation stays in your browser only. To be sure of your table, call {{phone}}.',
+      tournament:
+        'Registration from this site is not connected to Tournir yet. Your request is saved here; finish it on the tournament’s Tournir page or call {{phone}}.',
+    },
+  },
+  complex: {
+    name: 'Varna Sports Complex',
+    nameShort: 'Sports Complex',
+    clubName: 'SKTM Varna',
+    clubFullName: 'Table Tennis Sports Club Varna',
+    facilities: {
+      tables: '{{count}} professional tables',
+      changingRooms: 'Men’s and women’s changing rooms',
+      bar: 'Bar with food and drinks',
+      shop: 'Table tennis equipment shop',
+    },
+    hours: {
+      heading: 'Opening hours',
+      closed: 'Closed',
+      range: '{{open}}–{{close}}',
+    },
+  },
+  nav: {
+    primary: 'Primary',
+    home: 'Home',
+    reserve: 'Reserve',
+    tournaments: 'Tournaments',
+    coaching: 'Coaching',
+    prices: 'Prices',
+    hall: 'Hall / Contact',
+    hallShort: 'Hall',
+    club: 'The club',
+    gallery: 'Gallery',
+    rankings: 'Rankings',
+    account: 'Account',
+  },
+  seo: {
+    home: {
+      title: 'Table tennis in Varna — Varna Sports Complex · 14 tables',
+      description:
+        'Varna Sports Complex: 14 professional table tennis tables, online table booking, weekly tournaments and coaching for kids and adults in Varna.',
+    },
+    reserve: {
+      title: 'Book a table tennis table in Varna — Varna Sports Complex',
+      description:
+        'Pick a date, time and length (60, 90 or 120 minutes) and choose one of the 14 tables at Varna Sports Complex.',
+    },
+    myBookings: {
+      title: 'My bookings — Varna Sports Complex',
+      description: 'View, move or cancel your table bookings at Varna Sports Complex.',
+    },
+    tournaments: {
+      title: 'Table tennis tournaments in Varna — schedule and registration',
+      description:
+        'Upcoming tournaments at Varna Sports Complex: dates, level, format, free spots and registered players. Sign up online.',
+    },
+    tournament: {
+      title: '{{name}} · {{date}} — tournament in Varna',
+      description:
+        'Tournament at Varna Sports Complex: date, format, level, free spots and registered players.',
+    },
+    trainers: {
+      title: 'Table tennis coaching in Varna — SKTM Varna',
+      description:
+        'Group and individual table tennis coaching for children and adults with the coaches of SKTM Varna.',
+    },
+    prices: {
+      title: 'Prices — table hire, coaching and tournaments | Varna Sports Complex',
+      description:
+        'Table hire prices at Varna Sports Complex and coaching fees at SKTM Varna.',
+    },
+    hall: {
+      title: 'The hall and contact — Varna Sports Complex, Varna',
+      description:
+        '14 professional tables, changing rooms, bar and shop. Address, opening hours, map and phone for Varna Sports Complex.',
+    },
     club: {
-      who: 'We are “Table Tennis Sports Club Varna”.',
-      academy: 'We run a youth academy for children and juniors.',
-      welcome: 'We look forward to seeing you! 🏓',
+      title: 'SKTM Varna — table tennis club and youth academy',
+      description:
+        'Table Tennis Sports Club Varna: registered competitors, a youth academy, national championships and the club’s competition calendar.',
     },
-    social: {
-      heading: 'Follow us',
-      hall: 'The hall on Facebook',
-      hallDescription: 'Table Tennis Sports Complex Varna',
-      club: 'The club on Facebook',
-      clubDescription: 'Table Tennis Sports Club Varna',
+    gallery: {
+      title: 'Gallery — Varna Sports Complex and SKTM Varna',
+      description: 'Photos from the tournaments, the hall and the youth training sessions.',
     },
+    notFound: {
+      title: 'Page not found — Varna Sports Complex',
+      description: 'This page does not exist.',
+    },
+  },
+  home: {
+    hero: {
+      eyebrow: 'Varna Sports Complex',
+      title: 'Table tennis <accent>in Varna</accent>',
+      tagline: '{{count}} tables · Coaching · Tournaments',
+      body: 'A professional hall open to everyone — book a table for a game with friends, or join one of the tournaments every week.',
+      reserve: 'Reserve a table',
+      tournaments: 'See tournaments',
+      imageAlt: 'The tables in the hall at Varna Sports Complex',
+    },
+    today: {
+      heading: 'Free tables today',
+      freeNow: '<strong>{{free}}</strong> of {{total}} tables free right now',
+      closedNow: 'The hall is closed right now',
+      opensAt: 'Opens today at {{time}}',
+      closedToday: 'The hall is closed today',
+      afterHours: 'Closed for today — book for tomorrow',
+      hourly: 'Free tables by hour',
+      hourSlot: '{{time}}: {{free}} free',
+      reserve: 'Book a table',
+    },
+    atmosphere: {
+      heading: 'In the hall',
+      subtitle: 'Players, tables and tournament evenings.',
+      seeAll: 'Full gallery',
+    },
+    complex: {
+      heading: 'The hall',
+      more: 'Hall and contact',
+    },
+    tournaments: {
+      heading: 'Coming up',
+      seeAll: 'All tournaments',
+    },
+    club: {
+      eyebrow: 'SKTM Varna',
+      title: 'The club and the youth academy',
+      body: 'Table Tennis Sports Club Varna trains at the complex: a children’s academy, registered competitors and teams in the national championships.',
+      cta: 'About the club',
+    },
+    prices: {
+      heading: 'Prices',
+      body: 'Table hire, coaching and tournament entry.',
+      cta: 'See prices',
+    },
+  },
+  reserve: {
+    eyebrow: 'Varna Sports Complex · Booking',
+    title: 'Reserve a <accent>table</accent>',
+    subtitle: 'Choose a day, time and length, then pick your table.',
+    rescheduleTitle: 'Move a <accent>booking</accent>',
+    rescheduleSubtitle: 'Pick a new time or table for booking {{code}}.',
+    steps: {
+      label: 'Booking steps',
+      when: 'When',
+      table: 'Table',
+      details: 'Details',
+    },
+    date: 'Day',
+    duration: 'Length',
+    minutes: '{{count}} min',
+    time: 'Start time',
+    noTimes: 'No start times left on this day for that length.',
+    closedDay: 'The hall is closed on this day.',
+    freeCount_one: '{{count}} free',
+    freeCount_other: '{{count}} free',
+    none: 'full',
+    view: {
+      label: 'Show tables as',
+      plan: 'Floor plan',
+      list: 'List',
+    },
+    plan: 'Floor plan of the hall',
+    table: 'Table {{id}}',
+    tableShort: '{{id}}',
+    tableState: {
+      free: 'free',
+      busy: 'taken',
+      selected: 'selected',
+    },
+    noTables: 'Every table is taken at this time. Try another time.',
+    contact: {
+      heading: 'Your details',
+      name: 'Name',
+      phone: 'Phone',
+      email: 'E-mail',
+      emailHint: 'The confirmation is sent here and by SMS.',
+    },
+    payment: {
+      heading: 'Payment',
+      onsite: 'Pay at the hall',
+      onsiteHint: 'Pay at reception when you arrive.',
+      online: 'Pay online by card',
+      onlineHint: 'Secure card payment right after you confirm.',
+      onlineUnavailable: 'Coming soon',
+    },
+    summary: {
+      heading: 'Your booking',
+      price: 'Price',
+      estimate: '≈ {{amount}}',
+      priceOnRequest: 'At the hall price list',
+    },
+    actions: {
+      next: 'Continue',
+      back: 'Back',
+      confirm: 'Confirm booking',
+      confirming: 'Booking…',
+      reschedule: 'Move booking',
+    },
+    errors: {
+      conflict: 'Someone just took that table. Pick another one.',
+      network: 'The booking could not be sent. Check your connection and try again.',
+      name: 'Enter your name.',
+      phone: 'Enter a phone number we can reach you on.',
+      email: 'Enter a valid e-mail, or leave it empty.',
+    },
+    success: {
+      title: 'Your table is <accent>booked</accent>',
+      rescheduled: 'Booking <accent>moved</accent>',
+      code: 'Booking code',
+      notified: 'We have sent the confirmation to your phone and e-mail.',
+      notifiedDemo: 'Demo mode: no e-mail or SMS is sent and the hall does not see this booking.',
+      myBookings: 'My bookings',
+      another: 'Book another table',
+    },
+    myLink: 'My bookings',
+  },
+  myBookings: {
+    eyebrow: 'Varna Sports Complex · Booking',
+    title: 'My <accent>bookings</accent>',
+    subtitle: 'View, move or cancel a booking.',
+    empty: 'No bookings made on this device yet.',
+    lookup: {
+      heading: 'Find a booking',
+      body: 'Booked on another device? Enter the booking code and the phone you used.',
+      code: 'Booking code',
+      phone: 'Phone',
+      submit: 'Find',
+      notFound: 'No booking with that code and phone.',
+    },
+    status: {
+      confirmed: 'Confirmed',
+      cancelled: 'Cancelled',
+      past: 'Past',
+    },
+    actions: {
+      move: 'Move',
+      cancel: 'Cancel',
+      confirmCancel: 'Yes, cancel',
+      keep: 'Keep it',
+      cancelQuestion: 'Cancel this booking?',
+      forget: 'Remove from list',
+    },
+    newBooking: 'New booking',
+  },
+  tournaments: {
+    eyebrow: 'Varna Sports Complex · Tournaments',
+    title: '<accent>Tournaments</accent> at the hall',
+    subtitle: 'Club tournaments every week — for beginners, hobby players and competitors.',
+    empty: 'No upcoming tournaments have been published.',
+    source: 'Data from Tournir.com · updated {{date}}',
+    status: {
+      open: 'Registration open',
+      upcoming: 'Coming soon',
+      live: 'In progress',
+      finished: 'Finished',
+    },
+    spots: '{{taken}} / {{total}}',
+    spotsLabel: '{{taken}} of {{total}} spots taken',
+    spotsLeft_one: '{{count}} spot left',
+    spotsLeft_other: '{{count}} spots left',
+    full: 'Full',
+    details: 'Details',
+    fields: {
+      date: 'Date',
+      format: 'Format',
+      level: 'Level',
+      fee: 'Entry fee',
+      spots: 'Spots left',
+    },
+    feeAtHall: 'Paid at the hall',
+    players: {
+      heading: 'Registered players',
+      empty: 'No one has registered yet — be the first.',
+      rating: 'Rating',
+    },
+    register: {
+      heading: 'Quick registration',
+      name: 'First and last name',
+      phone: 'Phone',
+      submit: 'Register',
+      submitting: 'Sending…',
+      success: 'You are registered. See you at the table!',
+      successDemo: 'Request saved on this device.',
+      finishOnTournir: 'Finish on Tournir',
+      closed: 'Registration for this tournament is closed.',
+      errorName: 'Enter your first and last name.',
+      errorPhone: 'Enter your phone.',
+      error: 'The registration could not be sent. Try again.',
+    },
+    notFound: 'This tournament is no longer on the list.',
+    backToList: 'All tournaments',
+  },
+  prices: {
+    eyebrow: 'Prices',
+    title: '<accent>Prices</accent>',
+    subtitle: 'Table hire at the complex, coaching at the club.',
+    pending: 'The price list is being updated. Call {{phone}} for current prices.',
+    owner: {
+      complex: 'Varna Sports Complex',
+      club: 'SKTM Varna',
+    },
+    groups: {
+      tables: 'Table hire',
+      coaching: 'Coaching',
+      tournaments: 'Tournaments',
+    },
+    rows: {
+      tableDay: 'Table — daytime',
+      tableEvening: 'Table — evening',
+      tableWeekend: 'Table — weekend',
+      individual: 'Individual session',
+      group: 'Group sessions',
+      kids: 'Youth academy',
+      tournamentEntry: 'Tournament entry',
+    },
+    units: {
+      perHour: 'per hour',
+      perSession: 'per session',
+      perMonth: 'per month',
+      perTournament: 'per tournament',
+    },
+    reserveCta: 'Reserve a table',
+    coachingCta: 'Coaching',
+  },
+  hall: {
+    eyebrow: 'Varna Sports Complex',
+    title: 'The hall and <accent>contact</accent>',
+    subtitle: 'One of the best-equipped table tennis halls in the country, open to everyone.',
+    about:
+      'Varna Sports Complex is in the Western Industrial Zone (ZPZ) of Varna, opposite the former brewery. It is the venue — tables to hire, tournaments, changing rooms, a bar and a shop. The club, SKTM Varna, trains here.',
+    facilitiesHeading: 'Facilities',
+    photosHeading: 'Photos of the hall',
     location: {
       heading: 'Find us',
       addressLabel: 'Address',
@@ -65,38 +370,53 @@ export const en = {
       phoneLabel: 'Phone',
       call: 'Call us',
     },
-    cta: {
-      trainers: 'See the trainers',
-      gallery: 'Browse the gallery',
-      tournir: 'Tournaments on tournir.com',
+    social: {
+      heading: 'Follow us',
+      hall: 'The hall on Facebook',
+      hallDescription: 'Varna Sports Complex',
+      club: 'The club on Facebook',
+      clubDescription: 'SKTM Varna',
     },
   },
-  home: {
-    eyebrow: 'BAPHA · Varna',
-    title: 'Get on the <accent>table</accent>',
-    subtitle: '14 tables, weekly tournaments, and coaching — all in one place.',
-    quickActions: 'Quick actions',
-    actions: {
-      reserve: 'Reserve a table',
-      tournament: 'Join tournament',
-      trainer: 'Request trainer',
+  club: {
+    eyebrow: 'SKTM Varna',
+    title: 'Table Tennis <accent>Sports Club</accent> Varna',
+    subtitle: 'Registered competitors, a youth academy and teams in the national championships.',
+    about:
+      'SKTM Varna is the sports club — a separate organisation from Varna Sports Complex, which is the hall where it trains. The club runs the academy, registers its players with the federation and enters the national championships.',
+    sections: {
+      school: {
+        heading: 'Youth academy',
+        body: 'Around thirty-five children train at the academy, from first steps with a racket to competition. Group and individual sessions with the club’s coaches.',
+      },
+      competitors: {
+        heading: 'Registered competitors',
+        body: 'About fifteen of the children compete in the Bulgarian championships in their age groups, and around ten men play in the senior events.',
+      },
+      championships: {
+        heading: 'Championships',
+        body: 'A two-time national champion at under-11 level who has won medals at the Balkan Championship. The men’s first team won the V1 league and moved up a division.',
+      },
+      calendar: {
+        heading: 'Competition calendar',
+        body: 'National championship and league dates are set by the Bulgarian Table Tennis Federation. The club’s own tournaments are on the Tournaments page.',
+        cta: 'Club tournaments',
+      },
     },
-    nextUp: 'Next up',
+    trainersCta: 'Coaches and sessions',
+    photosHeading: 'The academy in photos',
   },
-  tournaments: {
-    status: {
-      open: 'Open',
-      full: 'Full',
-      closed: 'Closed',
-    },
-    spots: '{{taken}} of {{total}} spots taken',
-    register: 'Register',
-    names: {
-      cupOfTheAdvanced: 'Cup of the advanced',
-    },
+  footer: {
+    complex: 'Varna Sports Complex',
+    complexBody: 'The hall: tables, booking, tournaments.',
+    club: 'SKTM Varna',
+    clubBody: 'The club: academy, competitors, championships.',
+    links: 'Pages',
+    gallery: 'Gallery',
+    myBookings: 'My bookings',
   },
   gallery: {
-    eyebrow: 'BAPHA · Gallery',
+    eyebrow: 'Varna Sports Complex · Gallery',
     title: 'Gallery',
     subtitle: 'Tournaments, the hall, and our kids sessions — a look inside the club.',
     photos_one: '{{count}} photo',
@@ -110,6 +430,7 @@ export const en = {
       tournaments: 'Tournament photo {{index}}',
       hall: 'Photo of the hall {{index}}',
       kids: 'Kids training photo {{index}}',
+      venue: 'Photo from Varna Sports Complex {{index}}',
     },
     viewer: {
       open: 'Open photo {{index}} full screen',
@@ -163,7 +484,7 @@ export const en = {
     },
   },
   rankings: {
-    eyebrow: 'BAPHA · Club ranking',
+    eyebrow: 'SKTM Varna · Club ranking',
     title: 'Rankings',
     subtitle: 'Live ratings based on results from club tournaments.',
     howCalculated: 'How is the rating calculated?',
@@ -202,7 +523,7 @@ export const en = {
     },
   },
   trainers: {
-    eyebrow: 'BAPHA · Coaching',
+    eyebrow: 'SKTM Varna · Coaching',
     title: 'Train with our <accent>trainers</accent>',
     subtitle: 'Book a session with a certified coach and level up your game.',
     alsoCoaching: 'Also coaching',
@@ -237,11 +558,11 @@ export const en = {
         name: 'Nikolay Kapitanov',
         bio: [
           'Hello, my name is Nikolay Kapitanov. I was born in 1995 in Varna. I have played table tennis actively since the age of six, with countless successes both in Bulgaria and abroad. As a child, cadet and junior I reached the top in our country across the age groups and competed for our national team. At eighteen I turned professional among the men, and a few years later I debuted in Germany, where I spent seven years in the German league. I have been a coach since 2015, in 2021 I founded an academy for children, and since 2023 I have also been the chairman of a sports club.',
-          'After many years as a player and as a coach in various organisations, here and abroad, I decided to start a club of my own. I named it Table Tennis Club Varna.',
+          'After many years as a player and as a coach in various organisations, here and abroad, I decided to start a club of my own. I named it Table Tennis Sports Club Varna — SKTM Varna.',
           'In just 4 years of hard work, fighting spirit, good organisation and the support of my family and friends, I managed to build a working machine of remarkable children who keep achieving better and better results. I work with around thirty-five children, about fifteen of whom compete in the Bulgarian championship across different age groups, plus around ten men competing in the senior events.',
           'In that short period we have won medals in a range of formats, for the youngest and for the seniors alike, and in recent months we already have a two-time national champion at under-11 level, who represents our country at the Balkan Championship and even wins medals there. Among the men, our first team became champion of the V1 league and moved up to V, and in the new season it will fight for promotion to the B group.',
           'Coaching children is a real challenge — any parent will tell you — and it takes specific methods to succeed. I believe that with the experience I have, I can help children achieve even better results than the ones I achieved myself. I have always been guided by one maxim: be the kind of coach you yourself wanted to have. Understanding children, putting yourself in their place, or simply looking through their eyes, is an art, and it is the foundation for a great relationship and fast growth. In my view a good leader has to sense the moments to soften, to support or to step back, has to be demanding of the children, but above all has to be objective. I want to help the children in the club not only physically and technically, but mentally and organisationally too.',
-          'Since 1 June 2026, together with Tihomir Michev, one of the best veteran players in Bulgaria, we took our chance and opened a hall of our own. It is called Table Tennis Complex Varna. After a lot of thought and effort we built a remarkable venue with 12 professional courts and tables, a well-stocked bar with food and drinks, changing rooms for men and women, and a shop for table tennis equipment.',
+          'Since 1 June 2026, together with Tihomir Michev, one of the best veteran players in Bulgaria, we took our chance and opened a hall of our own. It is called Varna Sports Complex. After a lot of thought and effort we built a remarkable venue with 14 professional courts and tables, a well-stocked bar with food and drinks, changing rooms for men and women, and a shop for table tennis equipment.',
           'We run a variety of tournament formats, sometimes more than 10 in a single week — open tournaments, kaiser, doubles and of course singles. We work closely with several companies that support us with vouchers for different services. In only a few months the hall became a factor in table tennis in Varna and in Bulgaria, thanks to our organisation, cleanliness, order, example and of course a very good attitude towards every visitor. We try to improve every day and to find like-minded people who want, as we do, to grow and to promote our wonderful sport.',
           'We warmly invite you to visit us, to feel the positive energy, to enjoy the game and to experience good emotions. Developing both the sport and the coming generations matters a great deal to us. We look forward to seeing you.',
         ].join('\n\n'),
@@ -249,8 +570,7 @@ export const en = {
     },
   },
   notFound: {
-    title: 'Not built <accent>yet</accent>',
-    subtitle:
-      "This screen doesn't have a design yet. Head back home in the meantime.",
+    title: 'Page not <accent>found</accent>',
+    subtitle: 'This page does not exist or has moved. Head back home in the meantime.',
   },
 }

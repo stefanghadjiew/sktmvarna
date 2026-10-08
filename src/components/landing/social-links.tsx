@@ -14,7 +14,7 @@ export function SocialLinks() {
   return (
     <section className="mb-8 md:mb-14">
       <h2 className="mb-3 text-[11px] font-semibold tracking-[1px] text-label uppercase md:mb-5 md:text-xs">
-        {t('landing.social.heading')}
+        {t('hall.social.heading')}
       </h2>
 
       <ul className="grid gap-3 sm:grid-cols-2 md:gap-5">

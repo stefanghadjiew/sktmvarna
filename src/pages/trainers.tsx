@@ -7,9 +7,11 @@ import { PageIntro } from '@/components/page-intro'
 import { FeaturedTrainerCard } from '@/components/trainers/featured-trainer-card'
 import { TrainerList } from '@/components/trainers/trainer-list'
 import { featuredTrainer, otherTrainers } from '@/data/trainers'
+import { usePageMeta } from '@/hooks/use-page-meta'
 
 export function Trainers() {
   const { t } = useTranslation()
+  usePageMeta('trainers')
 
   return (
     <AppShell header={<PageHeader backTo="/" />} nav={<BottomNav />}>

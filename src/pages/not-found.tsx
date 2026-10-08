@@ -4,6 +4,7 @@ import { BottomNav } from '@/components/home/bottom-nav'
 import { AppShell } from '@/components/layout/app-shell'
 import { PageHeader } from '@/components/page-header'
 import { PageIntro } from '@/components/page-intro'
+import { usePageMeta } from '@/hooks/use-page-meta'
 
 /**
  * Placeholder for destinations the designs reference but that aren't built
@@ -11,11 +12,12 @@ import { PageIntro } from '@/components/page-intro'
  */
 export function NotFound() {
   const { t } = useTranslation()
+  usePageMeta('notFound')
 
   return (
     <AppShell header={<PageHeader backTo="/" />} nav={<BottomNav />}>
       <PageIntro
-        eyebrow={t('home.eyebrow')}
+        eyebrow={t('complex.name')}
         title={
           <Trans
             i18nKey="notFound.title"

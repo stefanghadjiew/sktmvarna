@@ -54,10 +54,6 @@ void i18n.use(initReactI18next).init({
 // Keeps the document in step with the active language for a11y and SEO.
 function syncDocumentLanguage() {
   document.documentElement.lang = i18n.resolvedLanguage ?? DEFAULT_LANGUAGE
-  document.title = i18n.t('app.title')
-  document
-    .querySelector('meta[name="description"]')
-    ?.setAttribute('content', i18n.t('app.description'))
 }
 
 // `init` is synchronous with inline resources, so its own `languageChanged`

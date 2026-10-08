@@ -7,16 +7,58 @@ services:
   - type: web
     name: sktmvarna
     runtime: static
+    # The build also pulls the latest tournaments from Tournir.com (see
+    # scripts/sync-tournaments.mjs), so a redeploy refreshes them.
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
+    envVars:
+      # Canonical origin for sitemap.xml, robots.txt and <link rel=canonical>.
+      # Change it when the site moves to its own domain.
+      - key: SITE_URL
+        value: https://sktmvarna.onrender.com
+      # Set these once the servers exist; until then booking and tournament
+      # sign-up run in demo mode and say so on the page.
+      # - key: VITE_BOOKING_API_URL
+      #   value: https://api.example.com
+      # - key: VITE_TOURNAMENT_API_URL
+      #   value: https://api.example.com
     # Build only when something that affects the built site changed.
     buildFilter:
       ignoredPaths:
         - README.md
     routes:
-      # The app is a single HTML file with client-side routing, so every path
-      # has to be served that file. Without this, /gallery is a 404 on a hard
-      # refresh or a shared link — it only works when you navigate in-app.
+      # The build writes a pre-filled `<page>/index.html` per page (its own
+      # title, description and canonical) for crawlers. Point each page at its
+      # file explicitly; keep this list in step with src/seo/pages.ts.
+      # robots.txt and sitemap.xml are real files, so the rules never touch
+      # them — Render serves an existing file before applying a rewrite.
+      - type: rewrite
+        source: /reserve/my
+        destination: /reserve/my/index.html
+      - type: rewrite
+        source: /reserve
+        destination: /reserve/index.html
+      - type: rewrite
+        source: /tournaments
+        destination: /tournaments/index.html
+      - type: rewrite
+        source: /trainers
+        destination: /trainers/index.html
+      - type: rewrite
+        source: /prices
+        destination: /prices/index.html
+      - type: rewrite
+        source: /hall
+        destination: /hall/index.html
+      - type: rewrite
+        source: /club
+        destination: /club/index.html
+      - type: rewrite
+        source: /gallery
+        destination: /gallery/index.html
+      # Everything else — tournament pages, and any route not built ahead of
+      # time — gets the app shell, and the app sets its head on load. Without
+      # this, a deep link is a 404 on a hard refresh.
       - type: rewrite
         source: /*
         destination: /index.html

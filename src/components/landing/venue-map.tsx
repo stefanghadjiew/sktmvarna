@@ -14,7 +14,7 @@ export function VenueMap() {
   return (
     <section className="mb-8 md:mb-14">
       <h2 className="mb-3 text-[11px] font-semibold tracking-[1px] text-label uppercase md:mb-5 md:text-xs">
-        {t('landing.location.heading')}
+        {t('hall.location.heading')}
       </h2>
 
       <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-stretch lg:gap-8">
@@ -23,7 +23,7 @@ export function VenueMap() {
             // `key` forces a reload when the language changes, so the map's own
             // labels follow the interface instead of staying on first paint.
             key={i18n.resolvedLanguage}
-            title={t('landing.location.mapTitle')}
+            title={t('hall.location.mapTitle')}
             src={venueEmbedUrl(i18n.resolvedLanguage ?? 'bg')}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -39,19 +39,19 @@ export function VenueMap() {
 
           <div>
             <p className="text-[11px] font-semibold tracking-[1px] text-label uppercase">
-              {t('landing.location.addressLabel')}
+              {t('hall.location.addressLabel')}
             </p>
             <p className="mt-1.5 text-[15px] leading-[1.5] font-semibold text-card-foreground">
-              {t('landing.location.address')}
+              {t('hall.location.address')}
             </p>
             <p className="mt-1 text-[13px] leading-[1.5] text-card-meta">
-              {t('landing.location.landmark')}
+              {t('hall.location.landmark')}
             </p>
           </div>
 
           <Button asChild variant="outline" className="mt-auto w-full">
             <a href={venueMapsUrl()} target="_blank" rel="noreferrer noopener">
-              {t('landing.location.openInMaps')}
+              {t('hall.location.openInMaps')}
               <ExternalLink className="size-4" strokeWidth={1.8} />
             </a>
           </Button>

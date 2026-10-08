@@ -1,0 +1,269 @@
+{
+  "syncedAt": "2026-10-08T10:43:44.171Z",
+  "source": "https://www.tournir.com",
+  "tournaments": [
+    {
+      "id": "96a18c26-4d31-4cc0-9d67-b2827eedcf64",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-08T18:15:00",
+      "level": "500+",
+      "spotsTaken": 6,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Чрез томбола ще определим кой ще спечели ваучер на стойност 10💶от Магазин Тенис на маса Варна. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [
+        {
+          "name": "Пламен Арнаудов",
+          "rating": 786
+        },
+        {
+          "name": "Живко Колев",
+          "rating": 785
+        },
+        {
+          "name": "Илиян Иванов",
+          "rating": 768
+        },
+        {
+          "name": "Дончо Стоянов",
+          "rating": 762
+        },
+        {
+          "name": "Кирил Золотухин",
+          "rating": 675
+        },
+        {
+          "name": "Кирил Петков",
+          "rating": 601
+        }
+      ],
+      "sourceUrl": "https://www.tournir.com/tournaments/96a18c26-4d31-4cc0-9d67-b2827eedcf64"
+    },
+    {
+      "id": "95ec305f-6bb3-49e0-818f-1bc9a7c5cecb",
+      "name": "КУПА ПЕТЪК ВЕЧЕР",
+      "startsAt": "2026-10-09T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 1,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Петък вечер е супер турнир за край на работната седмица. Турнира е предназначен за Любители. Заповядайте👌🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [
+        {
+          "name": "Константин Станчев",
+          "rating": 185
+        }
+      ],
+      "sourceUrl": "https://www.tournir.com/tournaments/95ec305f-6bb3-49e0-818f-1bc9a7c5cecb"
+    },
+    {
+      "id": "342d10e1-5a9b-4ad4-9859-70e31b6407ae",
+      "name": "ОТКРИТ ТУРНИР ВСЯКА НЕДЕЛЯ",
+      "startsAt": "2026-10-11T10:00:00",
+      "level": "Без ограничение",
+      "spotsTaken": 2,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "☀️Открит турнир Всяка Неделя е прекрасен турнир за последния ден от седмицата. В него участват много състезатели от цяла Северна България без ограничение в левела на участниците с награден фонд 30 % от събраните такси за участие под формата на ваучери разпределен между призьорите. Не пропускайте да изпитате тръпката от любимия ни спорт при перфектни условия за игра 👌🏆🥇🥈🥉",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [
+        {
+          "name": "Дончо Стоянов",
+          "rating": 762
+        },
+        {
+          "name": "Димитър Георгиев",
+          "rating": 500
+        }
+      ],
+      "sourceUrl": "https://www.tournir.com/tournaments/342d10e1-5a9b-4ad4-9859-70e31b6407ae"
+    },
+    {
+      "id": "673ad940-1192-48ab-b84f-9a7d84953588",
+      "name": "Турнир Храна от Село",
+      "startsAt": "2026-10-12T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🌽Турнир Храна от село се провежда всеки Понеделник. Той е предназначен за Любители. Шампиона на турнира печели ваучер на стойност 20 евро предоставен от нашите партньори от Храна от село. Те произвеждат натурално чисти зеленчуци с най-високо качество. Заповядайте 😊🙏 www.hranaotselo.bg",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/673ad940-1192-48ab-b84f-9a7d84953588"
+    },
+    {
+      "id": "9d89e4a9-74d7-4e5b-9e59-40714283c5b7",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-13T18:15:00",
+      "level": "500+",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Наградата за победителя в турнира ще бъде ваучер от нашия Магазин Тенис на маса Варна на стойност 20 евро. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/9d89e4a9-74d7-4e5b-9e59-40714283c5b7"
+    },
+    {
+      "id": "b822adbf-58de-4941-8bb5-7160ec54de55",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-15T18:15:00",
+      "level": "500+",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Чрез томбола ще определим кой ще спечели ваучер на стойност 10💶от Магазин Тенис на маса Варна. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/b822adbf-58de-4941-8bb5-7160ec54de55"
+    },
+    {
+      "id": "3bcdd533-7337-4b42-9dc7-7c06e6a0738d",
+      "name": "КУПА ПЕТЪК ВЕЧЕР",
+      "startsAt": "2026-10-16T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Петък вечер е супер турнир за край на работната седмица. Турнира е предназначен за Любители. Заповядайте👌🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/3bcdd533-7337-4b42-9dc7-7c06e6a0738d"
+    },
+    {
+      "id": "2d0d884d-f165-457f-8c0d-dfb2de4b1335",
+      "name": "Турнир Храна от Село",
+      "startsAt": "2026-10-19T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🌽Турнир Храна от село се провежда всеки Понеделник. Той е предназначен за Любители. Шампиона на турнира печели ваучер на стойност 20 евро предоставен от нашите партньори от Храна от село. Те произвеждат натурално чисти зеленчуци с най-високо качество. Заповядайте 😊🙏 www.hranaotselo.bg",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/2d0d884d-f165-457f-8c0d-dfb2de4b1335"
+    },
+    {
+      "id": "764539db-5af9-4a78-bc31-6d250bfe914d",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-20T18:15:00",
+      "level": "500+",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Наградата за победителя в турнира ще бъде ваучер от нашия Магазин Тенис на маса Варна на стойност 20 евро. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/764539db-5af9-4a78-bc31-6d250bfe914d"
+    },
+    {
+      "id": "3def00bc-39ac-4cbc-8bc3-21e26c4136a9",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-22T18:15:00",
+      "level": "500+",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Чрез томбола ще определим кой ще спечели ваучер на стойност 10💶от Магазин Тенис на маса Варна. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/3def00bc-39ac-4cbc-8bc3-21e26c4136a9"
+    },
+    {
+      "id": "5a646c94-a1ff-4e94-baee-fdf4a4a6f5fb",
+      "name": "КУПА ПЕТЪК ВЕЧЕР",
+      "startsAt": "2026-10-23T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Петък вечер е супер турнир за край на работната седмица. Турнира е предназначен за Любители. Заповядайте👌🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/5a646c94-a1ff-4e94-baee-fdf4a4a6f5fb"
+    },
+    {
+      "id": "df0cfb7e-d030-4deb-b47a-8ee4c563ad31",
+      "name": "Турнир Храна от Село",
+      "startsAt": "2026-10-26T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🌽Турнир Храна от село се провежда всеки Понеделник. Той е предназначен за Любители. Шампиона на турнира печели ваучер на стойност 20 евро предоставен от нашите партньори от Храна от село. Те произвеждат натурално чисти зеленчуци с най-високо качество. Заповядайте 😊🙏 www.hranaotselo.bg",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/df0cfb7e-d030-4deb-b47a-8ee4c563ad31"
+    },
+    {
+      "id": "5be2a416-246d-4065-9d62-925006193f10",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-27T17:15:00",
+      "level": "500+",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Наградата за победителя в турнира ще бъде ваучер от нашия Магазин Тенис на маса Варна на стойност 20 евро. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/5be2a416-246d-4065-9d62-925006193f10"
+    },
+    {
+      "id": "89793bf6-f446-47c5-a9de-9d712229e40a",
+      "name": "КУПА НАПРЕДНАЛИ",
+      "startsAt": "2026-10-29T18:15:00",
+      "level": "500+",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Напреднали е верига турнири, която се провежда Вторник и Четвъртък. Тя е предназначена за Напредали състезатели. Чрез томбола ще определим кой ще спечели ваучер на стойност 10💶от Магазин Тенис на маса Варна. Очакваме Ви 🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/89793bf6-f446-47c5-a9de-9d712229e40a"
+    },
+    {
+      "id": "fc6870f8-9d1f-47ec-954d-6572d06c86a4",
+      "name": "КУПА ПЕТЪК ВЕЧЕР",
+      "startsAt": "2026-10-30T17:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🏆Купа Петък вечер е супер турнир за край на работната седмица. Турнира е предназначен за Любители. Заповядайте👌🏓",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/fc6870f8-9d1f-47ec-954d-6572d06c86a4"
+    },
+    {
+      "id": "aadf81e8-139f-4d0f-8d05-b3311d0b95ca",
+      "name": "Турнир Храна от Село",
+      "startsAt": "2026-11-02T18:15:00",
+      "level": "До 700",
+      "spotsTaken": 0,
+      "spotsTotal": 32,
+      "status": "open",
+      "description": "🌽Турнир Храна от село се провежда всеки Понеделник. Той е предназначен за Любители. Шампиона на турнира печели ваучер на стойност 20 евро предоставен от нашите партньори от Храна от село. Те произвеждат натурално чисти зеленчуци с най-високо качество. Заповядайте 😊🙏 www.hranaotselo.bg",
+      "format": "Club Two Stage",
+      "fee": null,
+      "players": [],
+      "sourceUrl": "https://www.tournir.com/tournaments/aadf81e8-139f-4d0f-8d05-b3311d0b95ca"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { TABLE_COUNT } from '@/data/complex'
 import type { TranslationKey } from '@/i18n/types'
 
 export type TrainerStat = {
@@ -34,7 +35,7 @@ export const featuredTrainer: FeaturedTrainer = {
   stats: [
     { value: '11', labelKey: 'trainers.stats.yearsCoaching' },
     { value: '45+', labelKey: 'trainers.stats.playersTrained' },
-    { value: '12', labelKey: 'trainers.stats.tablesInHall' },
+    { value: String(TABLE_COUNT), labelKey: 'trainers.stats.tablesInHall' },
   ],
   tagKeys: [
     'trainers.tags.juniors',

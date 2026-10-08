@@ -20,15 +20,15 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-30 hidden bg-background/85 backdrop-blur-md md:block">
-      <div className="hairline-b mx-auto flex h-16 w-full max-w-content items-center gap-8 px-8 lg:px-12">
+      <div className="hairline-b mx-auto flex h-16 w-full max-w-content items-center gap-6 px-8 lg:gap-8 lg:px-12">
         <Link
           to="/"
           aria-label={t('common.homeLink')}
           className="flex shrink-0 items-center gap-2.5 rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
         >
           <Logo className="size-14" />
-          <span className="text-[13px] font-semibold tracking-[0.2px] text-foreground">
-            {t('landing.eyebrow')}
+          <span className="hidden text-[13px] font-semibold tracking-[0.2px] text-foreground lg:inline">
+            {t('complex.name')}
           </span>
         </Link>
 
@@ -38,10 +38,9 @@ export function SiteHeader() {
               <li key={id}>
                 <NavLink
                   to={to}
-                  end={to === '/'}
                   className={({ isActive }) =>
                     cn(
-                      'block rounded-lg px-3 py-2 text-[13px] font-medium transition-colors',
+                      'block rounded-lg px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors lg:px-3',
                       'focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none',
                       isActive
                         ? 'bg-brand-tint text-brand-accent'

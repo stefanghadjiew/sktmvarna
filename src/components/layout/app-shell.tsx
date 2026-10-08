@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 
+import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
 
 /**
@@ -32,7 +33,10 @@ export function AppShell({
       ) : null}
 
       <main className="screen-scroll min-h-0 flex-1 px-[22px] md:px-8 md:py-12 lg:px-12">
-        <div className="mx-auto w-full max-w-content">{children}</div>
+        <div className="mx-auto w-full max-w-content">
+          {children}
+          <SiteFooter />
+        </div>
       </main>
 
       {nav ? (

@@ -8,11 +8,13 @@ import { AppShell } from '@/components/layout/app-shell'
 import { PageHeader } from '@/components/page-header'
 import { PageIntro } from '@/components/page-intro'
 import { gallerySections, type GallerySection } from '@/data/gallery'
+import { usePageMeta } from '@/hooks/use-page-meta'
 
 type Viewing = { section: GallerySection; index: number }
 
 export function Gallery() {
   const { t } = useTranslation()
+  usePageMeta('gallery')
   // The lightbox is scoped to one section, so tapping a hall photo pages
   // through hall photos rather than the whole gallery. `viewing` outlives the
   // close so the dialog can animate out before it unmounts.

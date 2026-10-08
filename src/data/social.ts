@@ -11,14 +11,14 @@ export type SocialLink = {
 export const facebookLinks: SocialLink[] = [
   {
     id: 'hall',
-    labelKey: 'landing.social.hall',
-    descriptionKey: 'landing.social.hallDescription',
+    labelKey: 'hall.social.hall',
+    descriptionKey: 'hall.social.hallDescription',
     href: 'https://www.facebook.com/share/19ZEsCg97C/?mibextid=wwXIfr',
   },
   {
     id: 'club',
-    labelKey: 'landing.social.club',
-    descriptionKey: 'landing.social.clubDescription',
+    labelKey: 'hall.social.club',
+    descriptionKey: 'hall.social.clubDescription',
     href: 'https://www.facebook.com/share/19YG1dDWnU/?mibextid=wwXIfr',
   },
 ]
